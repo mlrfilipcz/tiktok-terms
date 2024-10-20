@@ -3,122 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Je Žrádlo - Application</title>
+    <title>To Je Žrádlo - TikTok Dev</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            font-family: 'Helvetica', sans-serif;
             background-color: #000;
             color: #fff;
-            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
             overflow-x: hidden;
         }
-        header {
-            background-color: #222;
-            padding: 40px 0;
+        h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            letter-spacing: 0.1rem;
             text-align: center;
-            font-size: 1.8em;
-            letter-spacing: 1.5px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #111;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-        }
-        h2 {
+            margin-bottom: 2rem;
+            text-transform: uppercase;
             color: #fff;
-            font-size: 2.2em;
-            margin-bottom: 30px;
-            text-align: center;
+            background: linear-gradient(90deg, #fff, #666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         p {
-            font-size: 1.2em;
-            color: #ddd;
-            margin-bottom: 20px;
+            font-size: 1.2rem;
             text-align: center;
+            max-width: 900px;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            color: #bbb;
+        }
+        .container {
+            text-align: center;
+            margin-top: 3rem;
+            width: 90%;
+            max-width: 1200px;
         }
         .buttons a {
             display: inline-block;
-            background-color: #333;
-            color: white;
-            padding: 10px 30px;
-            margin: 15px;
+            padding: 15px 35px;
+            margin: 20px;
+            border: 2px solid #fff;
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
-            border-radius: 30px;
-            transition: transform 0.4s ease, background-color 0.4s ease;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 0.05rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
         }
         .buttons a:hover {
-            background-color: #555;
-            transform: scale(1.05);
+            color: #000;
+            background-color: #fff;
+        }
+        .buttons a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            transition: 0.5s;
+        }
+        .buttons a:hover:before {
+            left: 0;
+        }
+        .buttons a span {
+            position: relative;
+            z-index: 1;
         }
         .social-icons {
-            margin-top: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
         }
         .social-icons img {
-            width: 50px;
-            height: 50px;
-            margin: 10px;
+            width: 60px;
+            height: 60px;
+            margin: 0 15px;
             filter: grayscale(100%);
-            transition: transform 0.3s ease, filter 0.3s ease;
+            transition: filter 0.3s ease, transform 0.3s ease;
         }
         .social-icons img:hover {
             filter: grayscale(0);
             transform: scale(1.2);
         }
-        .about {
-            margin-top: 50px;
-            text-align: center;
-        }
         .about img {
             width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-            display: block;
+            max-width: 700px;
+            margin-top: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1);
         }
         footer {
-            text-align: center;
-            padding: 30px 0;
-            background-color: #222;
             margin-top: 40px;
-            color: #888;
+            font-size: 0.9rem;
+            text-align: center;
+            color: #666;
         }
         .verification {
-            font-size: 0.8em;
-            color: #888;
-            text-align: center;
             margin-top: 20px;
-        }
-        a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #ddd;
+            font-size: 0.8rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
-<header>
-    To Je Žrádlo - Application
-</header>
-
 <div class="container">
-    <h2>About the App</h2>
-    <p>This app is designed to connect To Je Žrádlo's content with TikTok developer tools for better analytics and content management. Discover exciting food content and stay connected with us on social media.</p>
+    <h1>To Je Žrádlo</h1>
+    <p>Welcome to To Je Žrádlo – a platform where food meets tech. This app is designed to help you connect with our content and TikTok's developer tools. Stay tuned for delicious updates and insights!</p>
 
     <div class="buttons">
-        <a href="terms.html">Terms of Service</a>
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html"><span>Terms of Service</span></a>
+        <a href="privacy.html"><span>Privacy Policy</span></a>
     </div>
 
     <div class="social-icons">
@@ -137,8 +142,7 @@
     </div>
 
     <div class="about">
-        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Delicious food">
-        <p>Stay tuned for more updates and features coming soon!</p>
+        <img src="https://images.unsplash.com/photo-1601043893996-9be1bba0c141?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Food Technology">
     </div>
 
     <div class="verification">
