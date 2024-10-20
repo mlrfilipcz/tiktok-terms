@@ -3,72 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Je Žrádlo - Terms and Privacy</title>
+    <title>To Je Žrádlo - Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f7f9fc;
             color: #333;
-            line-height: 1.6;
+            overflow-x: hidden;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #ff4500;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-in-out;
         }
         .container {
-            max-width: 900px;
-            margin: 30px auto;
+            max-width: 1000px;
+            margin: 50px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            animation: slideIn 2s ease-out;
         }
-        h1, h2 {
-            color: #333;
+        h2 {
+            color: #ff4500;
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
         }
-        ul li {
-            padding: 10px 0;
-        }
-        a {
-            color: #4CAF50;
+        .buttons a {
+            display: inline-block;
+            background-color: #ff4500;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
             text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
-        a:hover {
-            text-decoration: underline;
+        .buttons a:hover {
+            background-color: #e63e00;
+            transform: scale(1.05);
+        }
+        .social-icons {
+            margin-top: 40px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        .social-icons img:hover {
+            transform: scale(1.2);
         }
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: 50px;
+        }
+        .verification {
+            font-size: 0.8em;
+            color: #999;
+            text-align: center;
+            margin-top: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>To Je Žrádlo - Terms and Privacy</h1>
+        To Je Žrádlo
     </header>
+
     <div class="container">
         <h2>Welcome to To Je Žrádlo</h2>
-        <p>Please review our terms of service and privacy policy below:</p>
-        <ul>
-            <li><a href="terms.html">Terms of Service</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-        <p>tiktok-developers-site-verification=JrSncNAh9ay5oQQWUrQfwJNb6juvYeFB</p>
+        <p>Your source for delicious food content from across the Czech Republic. Check out our terms of service and privacy policy, and don't forget to follow us on social media!</p>
+
+        <div class="buttons">
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/tojezradlo" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/tojezradlo" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Youtube_icon.png" alt="YouTube">
+            </a>
+            <a href="https://www.tiktok.com/@tojezradlo" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_icon.png" alt="TikTok">
+            </a>
+            <a href="https://www.facebook.com/tojezradlo" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" alt="Facebook">
+            </a>
+        </div>
+
+        <div class="verification">
+            tiktok-developers-site-verification=JrSncNAh9ay5oQQWUrQfwJNb6juvYeFB
+        </div>
     </div>
+
     <footer>
-        <p>&copy; 2024 To Je Žrádlo | All rights reserved</p>
+        &copy; 2024 To Je Žrádlo | All rights reserved
     </footer>
 </body>
 </html>
