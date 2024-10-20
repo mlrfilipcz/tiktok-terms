@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About App - To Je Žrádlo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 900px;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 15px 35px;
+            margin: 20px;
+            border: 2px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 0.05rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .buttons a:hover {
+            color: #000;
+            background-color: #fff;
+        }
+        .buttons a span {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <h1>About the App</h1>
+    <p>This app helps you track the view count of your TikTok videos using Google Sheets automation. Each region in the Czech Republic is represented by a playlist, and views are automatically calculated for each region, reset every month, and recorded for historical tracking. Goals are set for each region, and the app provides insights on whether these goals are met.</p>
+
+    <div class="buttons">
+        <a href="index.html"><span>Back to Home</span></a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 To Je Žrádlo | Follow us for more delicious content
+</footer>
+
+</body>
+</html>
