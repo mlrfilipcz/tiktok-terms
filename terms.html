@@ -4,10 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #282c34;
+            color: #61dafb;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            letter-spacing: 1.5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease;
+        }
+        h1, h2 {
+            color: #61dafb;
+            margin-bottom: 20px;
+        }
+        p, li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        a {
+            color: #61dafb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #48a9d0;
+        }
+        ul {
+            margin-left: 20px;
+            list-style: disc;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #282c34;
+            color: white;
+            margin-top: 40px;
+        }
+        .contact-info {
+            margin-top: 30px;
+        }
+        .highlight {
+            color: #61dafb;
+            font-weight: bold;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2, p, li {
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1, h2 {
+                font-size: 1.5em;
+            }
+            p, li {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
+
+<header>
+    Terms of Service
+</header>
+
+<div class="container">
     <h1>Terms of Service</h1>
-    <p>Here are the terms of service...</p>
-    <a href="index.html">Back to Home</a>
+    <p class="highlight">Last updated: October 20, 2024</p>
+    
+    <h2>Introduction</h2>
+    <p>Welcome to <strong>To Je Žrádlo</strong>! By using our service (the "Service"), you are agreeing to be bound by the following terms and conditions ("Terms of Service").</p>
+    <p>These Terms of Service govern your use of our application and related services. Please read them carefully before using the Service.</p>
+
+    <h2>Usage of the Service</h2>
+    <ul>
+        <li><strong>Eligibility</strong>: You must be at least 13 years old to use the Service.</li>
+        <li><strong>Proper Use</strong>: You agree not to misuse the Service or help anyone else do so. You may not engage in illegal activities, disrupt the functioning of the Service, or try to gain unauthorized access to it.</li>
+        <li><strong>Automated Access</strong>: You may not access the Service using automated methods such as bots or scrapers.</li>
+    </ul>
+
+    <h2>Intellectual Property</h2>
+    <p>All content provided through the Service, including but not limited to text, images, videos, and other media, is the intellectual property of <strong>To Je Žrádlo</strong>, unless otherwise stated. You may not copy, distribute, modify, or create derivative works of any content provided by the Service without prior written consent from us.</p>
+
+    <h2>Termination of Access</h2>
+    <p>We reserve the right to suspend or terminate your access to the Service at any time, for any reason, including but not limited to a violation of these Terms of Service.</p>
+
+    <h2>Changes to Terms</h2>
+    <p>We reserve the right to modify these Terms of Service at any time. Any changes will be effective immediately upon posting. It is your responsibility to review these terms regularly.</p>
+
+    <h2>Liability Disclaimer</h2>
+    <p>The Service is provided "as is" without any warranties, either expressed or implied. We are not responsible for any loss or damage that may arise from your use of the Service.</p>
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>If you have any questions or concerns about these Terms of Service, please contact us at:</p>
+        <p>Email: <a href="mailto:info@tojezradlo.com">info@tojezradlo.com</a></p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 To Je Žrádlo | All rights reserved
+</footer>
+
 </body>
 </html>
